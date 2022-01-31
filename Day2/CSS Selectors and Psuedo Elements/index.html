@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="descendant">
+      DESCENDANT SELECTORS (div p)
+      <div>
+        <p>Hi (p)</p>
+        <p>Ok(p)</p>
+        <div>
+          <p>Bye (p in a div)</p>
+        </div>
+      </div>
+    </div>
+    <div class="childselector">
+      CHILD SELECTORS(div>p)
+      <div>
+        <p>Hello (p)</p>
+        <p>hi (p)</p>
+        <section><p>Bye (p in a section)</p></section>
+        <section><p>Bye (p in a section)</p></section>
+      </div>
+    </div>
+    <div class="adjacent">
+      ADJACENT SIBLING SELECTORS (p+section)
+      <div>
+        <p>Hello (p)</p>
+        <p>hi (p)</p>
+        <section><p>Bye (p in a section)</p></section>
+        <section><p>Bye (p in a section)</p></section>
+      </div>
+    </div>
+    <div class="general">
+      GENERAL SIBLING SELECTOR (p~section)
+      <p>Hello (p)</p>
+      <p>hi (p)</p>
+      <section><p>Bye (p in a section)</p></section>
+      <section><p>Bye (p in a section)</p></section>
+    </div>
+
+    <div class="psuedo">
+      Psuedo Class Selectors and Elements <br />The below paragraph elements is
+      first child
+      <div style="border: 1px solid black;">
+        <p>Hello this is a paragraph in a div</p>
+        <p>hi this is a paragraph in a div</p>
+      </div>
+      The below paragraph demonstrates FIRST LINE
+      <section>
+        <p>
+          Bye Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+      </section>
+      <h3 class="test">HOVER AND ACTIVE</h3>
+      <h2>BEFORE AND AFTER</h2>
+      <input type="text" placeholder="FOCUS" />
+    </div>
+  </body>
+</html>

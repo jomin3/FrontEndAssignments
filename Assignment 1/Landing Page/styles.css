@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+.header {
+  background-image: url(./desktop/image-header.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ham {
+  display: none;
+}
+.arrow {
+  margin-left: 50%;
+}
+.nav {
+  display: flex;
+  color: hsl(0, 0%, 100%);
+  font-family: Barlow;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+  padding: 2%;
+}
+.heading {
+  font-size: 2em;
+  font-weight: 600;
+}
+.inner-nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  font-weight: 600;
+  width: 40%;
+  justify-content: space-around;
+}
+.inner-nav > div {
+  padding: 2%;
+}
+.inner-nav a {
+  text-decoration: none;
+  color: white;
+}
+.inner-nav div a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5%;
+  font-family: Fraunces;
+}
+.inner-nav a:hover {
+  color: black;
+}
+.headline {
+  font-size: 3em;
+  color: white;
+  font-family: Fraunces;
+  font-weight: 600;
+  margin: 4% 30%;
+  text-align: center;
+}
+.brand-one {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.brand {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.brand-img {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.image {
+  grid-column: 2;
+  background-image: url(./desktop/image-transform.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* grid-area: area1; */
+}
+.transform {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  align-content: space-around;
+  padding: 12%;
+}
+.transform-one {
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  align-content: space-around;
+  padding: 12%;
+}
+.inner-head-one {
+  font-family: Fraunces;
+  font-weight: 900;
+  font-size: 3em;
+}
+.inner-head-two {
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: hsl(210, 4%, 67%);
+}
+.inner-head-three > div {
+  width: 40%;
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.inner-head-three > div:hover {
+  border-radius: 6%;
+  background: linear-gradient(to bottom, white 50%, hsl(51, 100%, 49%) 50%);
+}
+.image-two {
+  background-image: url(./desktop/image-stand-out.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inner-head-four > div {
+  width: 40%;
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.inner-head-four > div:hover {
+  border-radius: 6%;
+  background: linear-gradient(to bottom, white 50%, hsl(7, 99%, 70%) 50%);
+}
+.image-three {
+  background-image: url(./desktop/image-graphic-design.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+  font-family: Barlow;
+}
+.image-three > div {
+  margin-bottom: 2%;
+}
+.image-four {
+  background-image: url(./desktop/image-photography.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: hsl(198, 62%, 26%);
+  font-family: Barlow;
+}
+.image-four > div {
+  margin-bottom: 2%;
+}
+.image-five {
+  background-image: url(./desktop/image-gallery-milkbottles.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image-six {
+  background-image: url(./desktop/image-gallery-orange.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image-seven {
+  background-image: url(./desktop/image-gallery-cone.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image-eight {
+  background-image: url(./desktop/image-gallery-sugarcubes.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image-heading {
+  font-family: Fraunces;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 60%;
+  margin-bottom: 3%;
+}
+.testimony {
+  height: 100vh;
+  margin: 5%;
+  text-align: center;
+  font-family: Fraunces;
+  font-weight: 900;
+  font-size: 1.4em;
+  color: hsl(210, 4%, 67%);
+}
+.box {
+  margin: 2%;
+  padding: 2%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inner-box {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.inner-box > img {
+  height: 60%;
+  width: 30%;
+  border-radius: 60%;
+}
+.para div {
+  margin-bottom: 3%;
+  font-family: Barlow;
+  font-size: 0.6em;
+  color: hsl(234, 8%, 49%);
+}
+.para-two div {
+  margin-bottom: 5%;
+}
+.nam {
+  font-size: 1em;
+  font-family: Fraunces;
+  color: black;
+}
+.designation {
+  font-family: Barlow;
+  font-size: 0.5em;
+  color: hsl(210, 4%, 67%);
+}
+.footer {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.foot {
+  background-color: hsl(167, 48%, 60%);
+  color: hsl(168, 38%, 34%);
+  text-align: center;
+  font-family: Barlow;
+}
+.foothead {
+  font-size: 1.8em;
+  font-weight: 900;
+  margin-top: 3%;
+}
+.contact {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  margin-left: 4%;
+}
+.contact div {
+  margin-left: 4%;
+}
+.contact div:hover {
+  color: white;
+}
+
+@media screen and (max-width: 376px) {
+  .header {
+    background-image: url(./moblie/image-header.jpg);
+  }
+  .inner-nav {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+  .headline {
+    text-align: center;
+    font-size: 2em;
+    margin: 17%;
+  }
+  .brand {
+    height: 130vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .brand-one {
+    height: 130vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .brand-img {
+    height: 200vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .image {
+    height: 50vh;
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url(./moblie/image-transform.jpg);
+  }
+  .transform-one {
+    grid-row: 2;
+  }
+  .image-two {
+    height: 50vh;
+    background-image: url(./moblie/image-stand-out.jpg);
+  }
+  .image-three {
+    background-image: url(./moblie/image-graphic-design.jpg);
+  }
+  .image-four {
+    background-image: url(./moblie/image-photography.jpg);
+  }
+  .testimony {
+    height: 200vh;
+    font-size: 1.2em;
+  }
+  .box {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    padding: 0;
+  }
+  .inner-box {
+    padding: 8%;
+  }
+  .inner-box > img {
+    height: 100%;
+    width: 40%;
+    border-radius: 60%;
+  }
+  .para-two div {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .para div {
+    font-size: 0.7em;
+  }
+  .footer {
+    height: 130vh;
+  }
+  .image-five {
+    height: 100%;
+  }
+  .image-six {
+    height: 100%;
+  }
+  .image-seven {
+    height: 100%;
+  }
+  .image-eight {
+    height: 100%;
+  }
+  .foothead {
+    margin-top: 20%;
+  }
+  .contact {
+    margin-top: 10%;
+  }
+  .image-heading {
+    margin-top: 80%;
+  }
+  .transform {
+    text-align: center;
+    padding: 5%;
+  }
+  .transform-one {
+    text-align: center;
+    padding: 5%;
+  }
+  .inner-head-one {
+    font-size: 2em;
+  }
+  .inner-head-two {
+    font-size: 0.85em;
+  }
+  .inner-head-two div {
+    margin-top: 2%;
+  }
+  .inner-head-three > div {
+    margin-left: 25%;
+    width: 50%;
+    font-size: 1.1em;
+  }
+  .inner-head-four > div {
+    width: 50%;
+    font-size: 1.1em;
+    margin-left: 25%;
+  }
+}

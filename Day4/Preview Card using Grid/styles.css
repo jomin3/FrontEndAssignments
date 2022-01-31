@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  height: 100vh;
+}
+.card {
+  height: 60vh;
+  width: 70vw;
+  margin: 20vh 18vw;
+  border-radius: 2%;
+  background-color: hsl(244, 38%, 16%);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+div img {
+  height: 100%;
+  width: 100%;
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  opacity: 0.5;
+}
+.sub-card2 {
+  background: hsl(277, 64%, 61%);
+}
+.sub-card1 {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  align-content: space-evenly;
+  padding: 8%;
+}
+.head {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+}
+.para {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1rem;
+}
+.stats {
+  display: grid;
+  font-size: 1.5rem;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-evenly;
+}
+.stat {
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+span {
+  color: violet;
+}

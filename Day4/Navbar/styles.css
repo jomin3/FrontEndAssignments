@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: #b51129;
+  background-image: linear-gradient(to bottom left, #570a24, #ad3849);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 180%;
+  height: 100vh;
+}
+.box {
+  display: flex;
+  background-color: black;
+  height: 20vh;
+  width: 70%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 38vh 20vw;
+}
+.inner-one {
+  margin-right: 4rem;
+}
+div span {
+  color: red;
+}

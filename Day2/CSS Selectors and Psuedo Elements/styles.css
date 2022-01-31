@@ -1,0 +1,48 @@
+.test:hover {
+  color: rosybrown;
+}
+.test:active {
+  color: orange;
+}
+.descendant {
+  border: 2px solid black;
+}
+.descendant div p {
+  color: red;
+}
+.childselector {
+  border: 2px solid black;
+}
+.childselector div > p {
+  color: red;
+}
+.adjacent {
+  border: 2px solid black;
+}
+.adjacent p + section {
+  color: red;
+}
+.general {
+  border: 2px solid black;
+}
+.general p ~ section {
+  color: red;
+}
+.psuedo {
+  border: 2px solid black;
+}
+.psuedo input:focus {
+  background-color: aquamarine;
+}
+.psuedo section p::first-line {
+  color: red;
+}
+.psuedo div p:first-child {
+  color: red;
+}
+.psuedo h2::after {
+  content: url(https://img.icons8.com/material/24/000000/adobe-animate.png);
+}
+.psuedo h2::before {
+  content: url(https://img.icons8.com/material/24/000000/adobe-animate.png);
+}

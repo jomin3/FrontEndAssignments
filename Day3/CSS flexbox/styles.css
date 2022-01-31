@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 600px;
+}
+.box {
+  height: 500px;
+  /* width: 800px; */
+  /* background-color: tomato; */
+  background-image: url(https://cdn.pixabay.com/photo/2021/04/26/20/53/ogwen-6209977_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* flex-wrap: wrap; */
+  /* flex-flow: column wrap-reverse; */
+  /* justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly; */
+}
+.flex1 {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 2px solid black;
+}
+.flex2 {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+.flex3 {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+.flex4 {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flex5 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: space-between;
+}
+.inner {
+  height: 60px;
+  width: 60px;
+  border: 2px solid red;
+  background-color: white;
+}
