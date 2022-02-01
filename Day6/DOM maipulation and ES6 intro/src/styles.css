@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+#im {
+  height: 500px;
+  width: 500px;
+}
+.list {
+  color: red;
+}
+.listnew {
+  font-size: 3rem;
+}
