@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.outer-box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  font-family: sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope";
+}
+
+.box {
+  width: 50vw;
+  height: 55vh;
+  display: grid;
+  grid-template-columns: 33% 66%;
+  background-color: white;
+  border-radius: 2%;
+}
+.image {
+  height: 55vh;
+  width: 100%;
+  background-image: url("drawers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2%;
+}
+.inner-box {
+  height: 55vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  padding: 5%;
+  align-content: space-around;
+}
+.para1 {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: hsl(217, 19%, 35%);
+}
+.para2 {
+  font-size: 0.8em;
+  color: hsl(214, 17%, 51%);
+}
+.para2 div {
+  margin-top: 2%;
+}
+.para3 {
+  color: hsl(218, 30%, 12%);
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  align-items: center;
+}
+.para3 img {
+  height: 50%;
+  width: 60%;
+  border-radius: 50%;
+}
+.share {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  height: 10%;
+  width: 10%;
+}
+.two {
+  color: hsl(218, 25%, 44%);
+}
+.links {
+  height: 8vh;
+  width: 17vw;
+  background-color: hsl(213, 23%, 23%);
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1%;
+  right: 20%;
+  bottom: 42%;
+  border-radius: 2%;
+}
+.square {
+  height: 4vh;
+  width: 2vw;
+  background-color: hsl(213, 23%, 23%);
+  position: absolute;
+  transform: rotate(45deg);
+  right: 27%;
+  bottom: 41%;
+}
+.share button {
+  height: 5%;
+  width: 5%;
+}
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .outer-box {
+    width: 100%;
+    height: 120vh;
+  }
+  .box {
+    height: 100vh;
+    width: 80vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+  }
+  .image {
+    height: 100%;
+    width: 100%;
+  }
+  .para1 {
+    font-size: 2.4em;
+  }
+  .para2 {
+    font-size: 1.6em;
+  }
+  .share {
+    font-size: 2.5em;
+  }
+  .links {
+    height: 5vh;
+    width: 30vw;
+    bottom: 33vh;
+    right: 8vw;
+  }
+  .square {
+    height: 5vh;
+    width: 4vw;
+    left: auto;
+    bottom: 32vh;
+    right: 15vw;
+  }
+}

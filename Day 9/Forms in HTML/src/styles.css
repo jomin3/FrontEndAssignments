@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: green;
+}
+.box {
+  background-color: white;
+  width: 70%;
+}

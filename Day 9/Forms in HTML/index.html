@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="box">
+      <form action="/action_page.php">
+        <label for="fname"> Name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          value="Enter your name"
+        /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value="Enter your email"
+        /><br />
+        <label for="age">Age:</label><br />
+        <input type="text" id="age" name="age" value="Enter your age" /><br />
+
+        <label for="describe">Which option describes you the best</label>
+        <select name="describes" id="describe">
+          <option value="student">student</option>
+          <option value="teacher">teacher</option>
+          <option value="Professional">Professional</option>
+        </select>
+        <input type="submit" value="Submit" />
+        <p>Please select your favorite Web language:</p>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label>
+        <p>Language and Frameworks known</p>
+        <input type="checkbox" id="Language1" name="Language1" value="REACT" />
+        <label for="Language1"> I know react</label><br />
+        <input type="checkbox" id="Language2" name="Language2" value="NODEJS" />
+        <label for="vehicle2"> I know NODEJS</label><br />
+        <input
+          type="checkbox"
+          id="Language3"
+          name="Language3"
+          value="ANGULAR"
+        />
+        <label for="vehicle3"> I know ANGULAR</label><br /><br />
+      </form>
+    </div>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>
