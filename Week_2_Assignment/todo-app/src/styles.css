@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+body {
+  background-color: black;
+  font-family: "Josefin Sans";
+  background-image: url("bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  height: 70vh;
+  width: 40vw;
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+  display: grid;
+  grid-template-rows: 15% 85%;
+  box-shadow: 0 20px 30px -20px #000;
+}
+.todobody {
+  height: 100%;
+  display: grid;
+  align-content: space-between;
+  grid-template-rows: 13% 68% 13%;
+}
+.addtodo {
+  height: 100%;
+  background-color: hsl(237, 14%, 26%);
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.addtodo input {
+  height: 100%;
+  width: 80%;
+  color: white;
+  background-color: hsl(237, 14%, 26%);
+  border-style: none;
+  font-family: "Josefin Sans";
+  font-size: 0.8em;
+}
+.addtodo input::placeholder {
+  color: white;
+  font-family: "Josefin Sans";
+  font-size: 0.8em;
+}
+.addtodo input:focus::placeholder {
+  color: black;
+}
+.addtodo input:focus {
+  background-color: orange;
+  color: black;
+}
+.adder {
+  cursor: pointer;
+}
+.todo {
+  height: 100%;
+  display: grid;
+  align-content: flex-start;
+  /* cursor: pointer; */
+}
+.todo img {
+  cursor: pointer;
+}
+.addedtask {
+  font-size: 0.8em;
+  height: 6vh;
+  background-color: hsl(237, 14%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+.addedtask input {
+  height: 100%;
+  width: 70%;
+  color: white;
+  background-color: hsl(237, 14%, 26%);
+  border-style: none;
+  font-family: "Josefin Sans";
+  font-size: 0.5em;
+}
+.addedtask input:focus {
+  background-color: orange;
+  color: black;
+}
+.footer {
+  max-height: 100%;
+  background-color: hsl(237, 14%, 26%);
+  display: flex;
+  font-size: 0.3em;
+  font-family: "Josefin Sans";
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-funcs {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-funcs div {
+  cursor: pointer;
+}
+.footer-funcs div:hover {
+  color: blue;
+}
+#clear {
+  cursor: pointer;
+}
+#clear:hover {
+  color: blue;
+}
+.readonly {
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .todo-list {
+    width: 70vw;
+  }
+}

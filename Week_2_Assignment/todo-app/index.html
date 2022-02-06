@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <div class="todo-list">
+      <div>T O D O</div>
+      <div class="todobody">
+        <div class="addtodo">
+          <img src="src\new-moon.png" />
+          <input
+            type="task"
+            id="task"
+            class="todotask"
+            placeholder="Enter the task todo"
+          />
+          <img class="adder" src="src\plus.png" />
+        </div>
+        <div class="todo" id="tasklist">
+          <!-- <div class="addedtask">
+            <img src="src\circle.png" />
+            <input type="addtask" id="addtask" class="totask" placeholder="" />
+            <img src="src\minus-button.png" />
+            <img src="src\check.png" />
+            <img src="src\delete.png" />
+          </div> -->
+        </div>
+        <div class="footer">
+          <div id="updation">0 tasks left</div>
+          <div class="footer-funcs">
+            <div id="all">All</div>
+            <div id="active">Active</div>
+            <div id="completed">Completed</div>
+          </div>
+          <div id="clear">Clear Completed</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
+
+<!-- <form action="#" class="adder" />
+        <input
+          type="text"
+          id="add"
+          class="addevent"
+          required
+          placeholder="Create a new Task"
+        />
+        <img class="icon" src="src\plus-solid.svg" />
+      </form> -->
