@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.image {
+  background-image: url("../../public/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
