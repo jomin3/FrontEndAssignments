@@ -1,0 +1,14 @@
+<form action="" #todo="ngForm" (ngSubmit)="newtask(name.value)">
+  <input type="text" name="task" id="task" ngModel #name="ngModel" />
+  <button type="submit">ADDtask</button>
+</form>
+
+<div *ngFor="let item of alltask">
+  <input
+    *ngIf="item.present"
+    type="text"
+    value="{{ item.task }} "
+    [disabled]="item.edit"
+  /><button *ngIf="item.present" (click)="ed(item.tasknow)">edit</button
+  ><button *ngIf="item.present" (click)="del(item.tasknow)">delete</button>
+</div>
