@@ -1,0 +1,8 @@
+.box {
+  margin: 10px;
+  width: 40%;
+  height: 30%;
+}
+.inner {
+  display: flex;
+}
