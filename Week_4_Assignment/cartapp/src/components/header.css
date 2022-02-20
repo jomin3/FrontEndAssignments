@@ -1,0 +1,19 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.options {
+  font-family: "Josefin Sans";
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.options div:hover {
+  border-bottom: 2px solid blue;
+  cursor: pointer;
+}
+.im {
+  height: 100%;
+  width: 15%;
+}

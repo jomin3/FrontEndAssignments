@@ -1,0 +1,73 @@
+.item {
+  height: 350px;
+  width: 25%;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  align-content: space-between;
+  margin-right: 8%;
+  margin-bottom: 2%;
+  font-family: "Josefin Sans";
+}
+.img-box {
+  height: 100%;
+  width: 100%;
+}
+.horizontal {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.heading {
+  width: 90%;
+  display: flex;
+  font-size: 1.4em;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  justify-content: space-between;
+}
+.colors {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  font-size: 1em;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn {
+  height: 15%;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: rgb(116, 111, 111);
+  cursor: pointer;
+}
+label {
+  font-size: 1.2em;
+}
+.maroon {
+  border-radius: 50%;
+  padding: 8%;
+  background-color: maroon;
+}
+.black {
+  border-radius: 50%;
+  padding: 8%;
+  background-color: black;
+}
+.brown {
+  border-radius: 50%;
+  padding: 8%;
+  background-color: brown;
+}
