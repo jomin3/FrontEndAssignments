@@ -17,7 +17,10 @@ const Cartitem = (props) => {
                 <div className="name">
                   <a href="#">{item.glassName}</a>
                 </div>
-                <div className="description">{item.description}</div>
+                <div className="description">
+                  {item.description} <span>{item.size[item.sizeid]}</span>
+                </div>
+                <div className={item.color[item.colorid]}></div>
                 <div className="price">Rs{item.cost}</div>
               </div>
             </div>

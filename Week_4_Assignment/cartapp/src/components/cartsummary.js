@@ -16,10 +16,10 @@ const Cartsummary = (props) => {
           </li>
 
           <li>
-            Tax <span>Rs 5.0</span>
+            Tax <span>Rs {props.tax}</span>
           </li>
           <li className="total">
-            Total <span>Rs {props.subt + 5}</span>
+            Total <span>Rs {props.subt + props.tax}</span>
           </li>
         </ul>
       </div>

@@ -71,3 +71,14 @@ label {
   padding: 8%;
   background-color: brown;
 }
+.selected {
+  border: 2px solid blue;
+}
+.horizontal div:hover {
+  cursor: pointer;
+  border: 2px solid blue;
+}
+.colors div:hover {
+  cursor: pointer;
+  border: 2px solid blue;
+}

@@ -12,10 +12,13 @@ const Cart = (props) => {
           cartIt={props.cartIt}
           delete={props.delete}
           changecount={props.changecount}
-          updatecart={props.updatecart}
         />
       </div>
-      <Cartsummary subt={props.subt} subtotal={props.subtotal} />
+      <Cartsummary
+        subt={props.subt}
+        subtotal={props.subtotal}
+        tax={props.tax}
+      />
     </>
   );
 };

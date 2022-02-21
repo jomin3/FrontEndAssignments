@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [subt, setsub] = useState(0);
+  const [tax, settax] = useState(0);
+
   const [count, setcount] = useState(1);
   const [sizes, setsizes] = useState(["Narrow", "Medium", "Wide"]);
   const [colors, setcolors] = useState(["maroon", "brown", "black"]);
@@ -18,6 +20,8 @@ function App() {
       size: sizes,
       color: colors,
       description: "Polarized Sunglasses, ultra durable stainless steel frames",
+      sizeid: 0,
+      colorid: 0,
     },
     {
       id: 2,
@@ -27,8 +31,8 @@ function App() {
       size: sizes,
       color: colors,
       description: "Polarized Sunglasses, Matte Surfaced Full-Rim",
-      sizeid: 1,
-      colorid: 1,
+      sizeid: 0,
+      colorid: 0,
     },
     {
       id: 3,
@@ -38,8 +42,8 @@ function App() {
       size: sizes,
       color: colors,
       description: "Power Sunglasses, Tortoise Full-Rim",
-      sizeid: 1,
-      colorid: 1,
+      sizeid: 0,
+      colorid: 0,
     },
     {
       id: 4,
@@ -49,8 +53,8 @@ function App() {
       size: sizes,
       color: colors,
       description: "Power Sunglasses, Scratch-resistant",
-      sizeid: 1,
-      colorid: 1,
+      sizeid: 0,
+      colorid: 0,
     },
   ]);
   // setproducts(allProducts);
@@ -68,6 +72,7 @@ function App() {
     cartitems.push(item);
     setcartitems([...cartitems]);
     console.log(cartitems);
+    subtotal();
     // updatecart();
   };
   const deleteitems = (id) => {
@@ -77,6 +82,7 @@ function App() {
     });
     setcartitems([...newitem]);
     console.log(cartitems);
+    subtotal();
   };
   const changecount = (val, id) => {
     // console.log("deleted");
@@ -95,6 +101,7 @@ function App() {
     cartitems.forEach((items) => {
       sub += items.count * items.cost;
     });
+    settax(sub * 0.08);
     setsub(sub);
     console.log(sub);
   };
@@ -103,7 +110,23 @@ function App() {
 
     setcartitems([...cartitems]);
   };
-  console.log(cartitems);
+  const changesize = (id, index) => {
+    products.forEach((items) => {
+      if (items.id === id) {
+        items.sizeid = index;
+      }
+    });
+    setproducts([...products]);
+  };
+  const changecolor = (id, index) => {
+    products.forEach((items) => {
+      if (items.id === id) {
+        items.colorid = index;
+      }
+    });
+    setproducts([...products]);
+  };
+  console.log(products);
 
   return (
     <div className="App">
@@ -112,7 +135,12 @@ function App() {
       </div>
       <div className="content">
         <div>
-          <Products allProducts={products} add={additems} />
+          <Products
+            allProducts={products}
+            add={additems}
+            changesize={changesize}
+            changecolor={changecolor}
+          />
         </div>
         <div>
           <Cart
@@ -121,7 +149,7 @@ function App() {
             changecount={changecount}
             subt={subt}
             subtotal={subtotal}
-            updatecart={updatecart}
+            tax={tax}
           />
         </div>
       </div>

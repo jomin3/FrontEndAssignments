@@ -235,7 +235,30 @@ header .count {
   content: "\276f";
   font-size: 1rem;
 }
-
+.description span {
+  color: blue;
+}
+.maroon {
+  height: 100%;
+  width: 10%;
+  border-radius: 50%;
+  padding: 3%;
+  background-color: maroon;
+}
+.black {
+  height: 100%;
+  width: 10%;
+  border-radius: 50%;
+  padding: 3%;
+  background-color: black;
+}
+.brown {
+  height: 100%;
+  width: 10%;
+  border-radius: 50%;
+  padding: 3%;
+  background-color: brown;
+}
 .summary {
   font-size: 1.2rem;
   text-align: right;
